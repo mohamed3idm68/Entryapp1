@@ -18,6 +18,7 @@ class CourseList extends Component {
             </button>
             <button onClick={() => this.toggleState()}>Edit Course</button>
           </li>
+          
         </Fragment>
       </>
     );

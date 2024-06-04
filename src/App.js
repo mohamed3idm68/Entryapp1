@@ -1,4 +1,5 @@
 import React , {Component} from "react";
+import "./index.css";
 import CourseForm from "./comp/CourseForm";
 import CourseList from "./comp/CourseList";
 
@@ -23,12 +24,16 @@ class App extends Component  {
     e.preventDefault();
     let current = this.state.current;
     let courses = this.state.courses;
-    courses.push({ name: current });
-    this.setState({
-      courses,
-      current: ""
-    });
-  };
+
+    if(current = current) {
+      courses.push({ name: current });
+      this.setState({
+        courses,
+        current: ""
+      });
+    };
+    }
+    
 
 
   // delete course
