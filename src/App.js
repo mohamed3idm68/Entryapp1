@@ -25,13 +25,13 @@ class App extends Component  {
     let current = this.state.current;
     let courses = this.state.courses;
 
-    if(current = current) {
+
       courses.push({ name: current });
       this.setState({
         courses,
         current: ""
       });
-    };
+   
     }
     
 
