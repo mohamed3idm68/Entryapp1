@@ -24,13 +24,14 @@ class App extends Component  {
     e.preventDefault();
     let current = this.state.current;
     let courses = this.state.courses;
-
-
       courses.push({ name: current });
-      this.setState({
-        courses,
-        current: ""
-      });
+      if (current = current ) {
+        this.setState({
+          courses,
+          current: ""
+        });
+      }
+      
    
     }
     
@@ -40,10 +41,15 @@ class App extends Component  {
 
   deleteCourse = (index) => {
       let courses = this.state.courses;
+      let length = courses.length;
       courses.splice(index , 1);
-      this.setState({
+      
+       this.setState({
         courses
-      })
+      });
+       
+    
+      
   }
 
   // edit course 
@@ -74,7 +80,7 @@ class App extends Component  {
           addCourse={this.addCourse}
           current={this.state.current}
         />
-        <ul>{courseList} </ul>
+        <ul>{this.state.courses.length> 0 ? courseList : <p>there is no courses to show</p>} </ul>
       </div>
     );
   }

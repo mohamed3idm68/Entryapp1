@@ -83,41 +83,12 @@ ul > form {
 }
 
 
-/* 
 
+p {
+  background-color: #5e645f;
+    color: white;
+    width: fit-content;
+    margin: 5px auto;
+    padding:10px;
 
-
-
-form 
-
-form 
-
-ul li {
-  list-style: none;
-  padding:5px;
-  margin:0 auto;
-  background-color: blue;
-  width:500px;
- 
 }
-
-span{
-  padding:7px;
-  font-weight: bold;
-  font-size: 20px;
-  margin:10px 
-}
-
-ul li button:first-of-type{
-   padding:5px;
-   margin:2px;
-   font-weight: bold;
-  font-size:15px;
-}
-
-ul li button:nth-of-type(2){
-  padding:5px;
-  margin:2px;
-  font-weight: bold;
-  font-size:15px;
-} */
