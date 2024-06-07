@@ -51,10 +51,14 @@ class App extends Component  {
     let courses = this.state.courses;
     let course =courses[index];
     course['name'] = value;
-    this.setState({
-      courses: courses,
-    })
-  }
+  
+
+      this.setState({
+        courses: courses,
+      })
+    }
+    
+   
 
   render() {
     const { courses } = this.state;
